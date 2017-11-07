@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:background="#fff"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="#333"
+            android:text="工商银行"/>
+
+        <TextView android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="#999"
+            android:text="000000"/>
+    </LinearLayout>
+
+    <com.rzc.widget.RankHorScrollView android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/tvPrice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="第1列"/>
+
+            <TextView android:id="@+id/tvZhangFu"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="第2列"/>
+
+            <TextView android:id="@+id/tvZhangE"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="第3列"/>
+
+            <TextView android:id="@+id/tvZhenFu"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvShiYin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvHuanShou"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvLiangBi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvWeiBi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvKai"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvZuoShou"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvMax"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第5列"/>
+
+            <TextView android:id="@+id/tvMin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+
+            <TextView android:id="@+id/tvShiZhi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="第4列"/>
+        </LinearLayout>
+    </com.rzc.widget.RankHorScrollView>
+</LinearLayout>

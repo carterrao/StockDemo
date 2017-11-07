@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#d6433b">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/title_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="排行榜"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+    <com.rzc.widget.RankHorScrollView
+        android:id="@+id/hsvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="110dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#fff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="最新"
+                android:textSize="15dp"
+                android:textColor="#333"/>
+
+            <TextView
+                android:id="@+id/tvZhangFu"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="涨幅"
+                android:textSize="15dp"
+                android:textColor="#333"/>
+
+            <TextView
+                android:id="@+id/tvZhangE"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="涨跌"
+                android:textSize="15dp"
+                android:textColor="#333"/>
+
+            <TextView
+                android:id="@+id/tvZhenFu"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="振幅"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvShiYin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="市盈率"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvHuanShou"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="换手率"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvLiangBi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="量比"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvWeiBi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="委比"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvKai"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="开盘"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvZuoShou"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="昨收盘"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvMax"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="最高"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvMin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="最低"
+                android:textColor="#333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvShiZhi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="总市值"
+                android:textColor="#333"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </com.rzc.widget.RankHorScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ddd"/>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ddd"
+        android:dividerHeight="0.5dp"/>
+
+</LinearLayout>
